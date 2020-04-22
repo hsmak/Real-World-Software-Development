@@ -6,13 +6,14 @@ public class SwitchExpressions {
         var dealStage = Stage.LEAD;
         var amount = 10;
 
-        var forecastedAmount = amount * switch (dealStage) {
+        // This needs Java 12
+        /*var forecastedAmount = amount * switch (dealStage) {
             case LEAD -> 0.2;
             case EVALUATING -> 0.5;
             case INTERESTED -> 0.8;
             case CLOSED -> 1;
         };
 
-        System.out.println(forecastedAmount);
+        System.out.println(forecastedAmount);*/
     }
 }
